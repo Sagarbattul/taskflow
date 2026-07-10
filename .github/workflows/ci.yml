@@ -57,6 +57,14 @@ jobs:
 
       - run: npm run build
 
+      - name: Show Current Directory
+        run: pwd
+
+      - name: List Files
+        run: ls -la
+
+      - name: List .next
+        run: ls -la .next
 
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
